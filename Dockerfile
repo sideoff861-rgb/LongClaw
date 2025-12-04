@@ -8,7 +8,7 @@ FROM base AS build
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 
-RUN pnpm install --no--frozen-lockfile
+RUN pnpm install 
 
 RUN pnpm run -r build
 
